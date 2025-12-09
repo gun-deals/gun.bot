@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gun.bot - Coming Soon</title>
+    <style>
+        /* Critical CSS - renders immediately before Tailwind loads */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #111827;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
+        .text-center { text-align: center; }
+        h1 { font-size: 3rem; font-weight: 700; margin-bottom: 2rem; }
+        .text-blue-500 { color: #3b82f6; }
+        .text-gray-300 { color: #d1d5db; }
+        .text-gray-500 { color: #6b7280; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .space-x-3 > * + * { margin-left: 0.75rem; }
+        .h-3 { height: 0.75rem; }
+        .w-3 { width: 0.75rem; }
+        .bg-blue-500 { background-color: #3b82f6; }
+        .rounded-full { border-radius: 9999px; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-sm { font-size: 0.875rem; }
+        .font-semibold { font-weight: 600; }
+        .max-w-2xl { max-width: 42rem; }
+        .max-w-lg { max-width: 32rem; margin-left: auto; margin-right: auto; }
+        .bg-gray-800 { background-color: #1f2937; }
+        .p-8 { padding: 2rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); }
+        .bg-blue-600 { background-color: #2563eb; }
+        .bg-blue-600:hover { background-color: #1d4ed8; }
+        a.inline-block {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        a.inline-block:hover { background-color: #1d4ed8; }
+        .mt-16 { margin-top: 4rem; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @media (min-width: 768px) {
+            h1 { font-size: 3.75rem; }
+        }
+    </style>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"></noscript>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-8">
+            <span class="text-blue-500">gun</span><span class="text-gray-300">.bot</span>
+        </h1>
+
+        <div class="space-y-6 mb-12">
+            <div class="flex items-center justify-center space-x-3">
+                <div class="h-3 w-3 bg-blue-500 rounded-full animate-pulse"></div>
+                <p class="text-2xl font-semibold text-gray-300">Coming Soon</p>
+            </div>
+
+            <p class="text-xl max-w-2xl mx-auto">
+                We're working to create the best firearms indexing site on the planet.
+            </p>
+
+            <p class="space-y-6">
+                Coming in late 2025
+            </p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl max-w-lg mx-auto">
+            <a href="mailto:admin@gun.bot" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-200">
+                admin@gun.bot
+            </a>
+        </div>
+    </div>
+
+    <footer class="mt-16 text-gray-500 text-sm">
+        © 2025 gun.bot
+    </footer>
+</body>
+</html>
